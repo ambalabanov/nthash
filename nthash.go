@@ -17,7 +17,7 @@ func GetHash(pass string) string {
 	return hex.EncodeToString(h.Sum(nil))
 }
 
-//CheckHash create NTHash hash from string password
+//CheckHash check NTHash hash from hash string & password
 func CheckHash(pass, hash string) (c bool) {
 	nthash := GetHash(pass)
 	if hash == nthash {
