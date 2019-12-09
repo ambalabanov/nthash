@@ -20,8 +20,5 @@ func GetHash(pass string) string {
 //CheckHash check NTHash hash from hash string & password
 func CheckHash(pass, hash string) (c bool) {
 	nthash := GetHash(pass)
-	if hash == nthash {
-		c = true
-	}
-	return c
+	return hash == nthash
 }
