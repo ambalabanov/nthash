@@ -5,8 +5,7 @@ import (
 )
 
 func TestGetHash(t *testing.T) {
-	hash := GetHash("pass1!@#$")
-	if hash != "aba2fd935f15ccdd099a36bb777ba0f1" {
+	if GetHash("pass1!@#$") != "aba2fd935f15ccdd099a36bb777ba0f1" {
 		t.Errorf("Hash was incorrect")
 	}
 }
